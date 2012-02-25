@@ -1,0 +1,21 @@
+h1. Second Order Generator
+
+Generates dependant siganls with defined probability.
+
+h3. Usage:
+
+ * Define Probability Hash
+   p = {'0' => 0.3, '0/0' => 0.8, '0/1' => 0.4}
+ * Define amount of generated signals
+   @AMOUNT = 1000000
+
+h3. Example
+
+* P(0) = 0.7
+* P(1) = 0.3
+* P(0/0) = 0.8
+* P(1/0) = 0.2
+* P(0/1) = 0.4
+* P(1/1) = 0.6
+
+
