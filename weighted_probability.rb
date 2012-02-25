@@ -1,7 +1,7 @@
 class Array
     
     def sum
-      inject( nil ) { |sum,x| sum ? sum+x : x }
+      inject(0) {|sum,n| sum+=n}
     end
     
     def probability(spread = 2)
