@@ -8,7 +8,7 @@ require 'fileutils'
 #   MAIN  #
 ###########
 
-@AMOUNT = 1000000
+@AMOUNT = 100000
 @OUTPUT_FOLDER = "result"
 if File.directory? @OUTPUT_FOLDER
   puts "The folder #{@OUTPUT_FOLDER} is already exists. Please delete/rename this folder before start!"
@@ -17,8 +17,8 @@ else
   FileUtils.mkdir @OUTPUT_FOLDER
 end
 
-#    0    00   10
-p = {'0' => 0.3, '0/0' => 0.8, '0/1' => 0.2}
+# Probability to 0 after given context
+p = {'00' => 0.3, '01' => 0.8, '10' => 0.2, '11' => 0.6}
 signal = SignalGenerator.new(p)
 signal.generate(@AMOUNT)
 
